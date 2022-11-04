@@ -129,67 +129,43 @@
                 android:text="@string/textviewGenero"
                 android:textColor="@color/secondary_text" />
 
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:rowCount="2"
-                android:columnCount="2"
-                android:alignmentMode="alignMargins"
-                android:columnOrderPreserved="false"
-                android:layout_marginStart="30dp">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardElevation="0dp">
+                    android:layout_marginStart="30dp">
 
-                    <CheckBox
-                        android:id="@+id/checkBoxMasculino"
+                    <RadioButton
+                        android:id="@+id/radioButtonMasculino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:textColor="@color/secondary_text"
-                        android:text="@string/generomasculino"
-                        android:padding="10dp"/>
-
-                </androidx.cardview.widget.CardView>
+                        android:text="@string/generomasculino" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    app:cardElevation="0dp">
-
-                    <CheckBox
-                        android:id="@+id/checkBoxFemenino"
+                    <RadioButton
+                        android:id="@+id/radioButtonFemenino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:text="@string/generofemenino"
+                        android:textAlignment="viewStart"
                         android:textColor="@color/secondary_text"
-                        android:padding="10dp"/>
+                        android:translationX="150dp"
+                        android:translationY="-48dp"/>
 
-                </androidx.cardview.widget.CardView>
 
-
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:cardElevation="0dp">
-
-                    <CheckBox
-                        android:id="@+id/checkBoxOtro"
+                    <RadioButton
+                        android:id="@+id/radioButtonOtro"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:textColor="@color/secondary_text"
                         android:text="@string/generoOtro"
-                        android:padding="10dp"/>
+                        android:translationY="-40dp"/>
 
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
+                </RadioGroup>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
