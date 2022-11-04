@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">saludAppBC</string>
+    <string name="textViewUsername">Nombre de usuario</string>
+    <string name="username">Ingrese su nombre de usuario</string>
+    <string name="textViewPassword">Contraseña</string>
+    <string name="password">Ingrese su contraseña</string>
+    <string name="forgotPassword"><u>¿Olvidó su contraseña?</u></string>
+    <string name="buttonLogin">Ingresar</string>
+    <string name="textViewNoAccount">No tengo una cuenta</string>
+    <string name="register"><u>¡Regístrate ahora!</u></string>
+    <string name="textviewemail">Correo electrónico</string>
+    <string name="email">Ingrese su correo electrónico</string>
+    <string name="buttonforgotpassword">Cambiar mi contraseña</string>
+    <string name="textviewGenero">Seleccione su genero</string>
+    <string name="generofemenino">Fenemino</string>
+    <string name="generomasculino">Masculino</string>
+    <string name="generoOtro">Otro</string>
+    <string name="buttonSignUp">Crear Cuenta</string>
+    <string name="alreadyAccount">Tengo una cuenta</string>
+    <string name="buttonsignup2"><u>¡Iniciar Sesión!</u></string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_text">#00A6EA</color>
+    <color name="titles">#0065CC</color>
+    <color name="navigation">#164194</color>
+    <color name="subtitles">#747F9E</color>
+    <color name="secondary_text">#A4B0BE</color>
+    <color name="doctor_names">#313E4C</color>
+    <color name="skin">#FEAD7F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
