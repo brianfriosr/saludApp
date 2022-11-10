@@ -9,8 +9,8 @@
     tools:context=".view.ui.fragments.DentistaFragment">
 
     <RelativeLayout
-        android:layout_width="436dp"
-        android:layout_height="164dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginRight="0dp"
@@ -86,7 +86,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/Smith"
+                        android:src="@drawable/smith"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
                     </ImageView>
@@ -141,7 +141,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/Riley"
+                        android:src="@drawable/riley"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
                     </ImageView>
@@ -196,7 +196,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/Jung"
+                        android:src="@drawable/jung"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
                     </ImageView>
@@ -251,7 +251,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/Otero"
+                        android:src="@drawable/otero"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
                     </ImageView>
