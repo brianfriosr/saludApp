@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.rios.figueroa.saludappbc.R
+import com.rios.figueroa.saludappbc.view.ui.fragments.HomeFragment
 
 class LoginActivity : AppCompatActivity() {
     lateinit var loginButton:Button

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_dentistaFragment"
+            app:destination="@id/dentistaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_especialidadFragment"
+            app:destination="@id/especialidadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_generalFragment"
+            app:destination="@id/generalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dentistaFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.DentistaFragment"
+        android:label="fragment_dentista"
+        tools:layout="@layout/fragment_dentista" />
+    <fragment
+        android:id="@+id/especialidadFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.EspecialidadFragment"
+        android:label="fragment_especialidad"
+        tools:layout="@layout/fragment_especialidad" />
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.GeneralFragment"
+        android:label="fragment_general"
+        tools:layout="@layout/fragment_general" />
+</navigation>
