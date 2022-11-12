@@ -1,10 +1,8 @@
 package com.rios.figueroa.saludappbc.view.ui.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.rios.figueroa.saludappbc.R

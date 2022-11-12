@@ -14,8 +14,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val inflater:MenuInflater=menuInflater
-        inflater.inflate(R.menu.menu_bottom,menu)
+        val inflater: MenuInflater =menuInflater
+        inflater.inflate(R.menu.bottom_navigation_menu,menu)
         return true
     }
 }
