@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/30/04cbm99152l5yp_cm0czdygm0000gp/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/43/b5npp1q123x0j5p6y1smdmfm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -67,7 +67,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="/private/var/folders/30/04cbm99152l5yp_cm0czdygm0000gp/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/43/b5npp1q123x0j5p6y1smdmfm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$PROJECT_DIR$/../proyectoFinal_saludApp/iconos/Group-only-logo-salud-app.png" />
-                                                <entry key="scalingPercent" value="95" />
+                                                <entry key="imagePath" value="$PROJECT_DIR$/../assets/iconos/logo_icono.png" />
+                                                <entry key="scalingPercent" value="101" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -131,7 +131,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/30/04cbm99152l5yp_cm0czdygm0000gp/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/43/b5npp1q123x0j5p6y1smdmfm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -175,7 +175,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/30/04cbm99152l5yp_cm0czdygm0000gp/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/43/b5npp1q123x0j5p6y1smdmfm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -239,7 +239,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="/private/var/folders/30/04cbm99152l5yp_cm0czdygm0000gp/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/43/b5npp1q123x0j5p6y1smdmfm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
