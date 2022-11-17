@@ -18,4 +18,8 @@ class HomeActivity : AppCompatActivity() {
         inflater.inflate(R.menu.menu_bottom,menu)
         return true
     }
+
+    override fun onBackPressed() {
+        return
+    }
 }

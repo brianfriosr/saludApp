@@ -10,7 +10,7 @@
     <string name="register"><u>¡Regístrate ahora!</u></string>
     <string name="textviewemail">Correo electrónico</string>
     <string name="email">Ingrese su correo electrónico</string>
-    <string name="buttonforgotpassword">Cambiar mi contraseña</string>
+    <string name="buttonforgotpassword">Recuperar mi contraseña</string>
     <string name="textviewGenero">Seleccione su genero</string>
     <string name="generofemenino">Fenemino</string>
     <string name="generomasculino">Masculino</string>

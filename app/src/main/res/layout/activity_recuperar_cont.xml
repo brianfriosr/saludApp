@@ -53,7 +53,7 @@
                 android:text="@string/textviewemail" />
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/recuperarcorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -72,7 +72,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/buttonForgotPassword"
+        android:id="@+id/botonrecuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -97,18 +97,18 @@
             android:id="@+id/textViewNoAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="690dp"
             android:layout_marginStart="50dp"
-            android:textColor="@color/doctor_names"
+            android:layout_marginTop="690dp"
             android:fontFamily="@font/roboto_bold"
-            android:text="@string/textViewNoAccount" />
+            android:text="@string/textViewNoAccount"
+            android:textColor="@color/doctor_names" />
 
         <TextView
             android:id="@+id/bCreateAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="690dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="690dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/register"
             android:textColor="@color/button_text" />
