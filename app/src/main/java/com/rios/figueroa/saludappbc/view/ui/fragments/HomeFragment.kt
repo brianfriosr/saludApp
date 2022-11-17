@@ -41,10 +41,19 @@ class HomeFragment : Fragment() {
         cardLibOdon.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_dentistaFragment)
         }
+        //instanciamos el menu para que lleve al fragment indicado
+        val buttonBottomMenu= view.findViewById<BottomNavigationView>(R.id.bottom_main_navigation)
+        buttonBottomMenu.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.nav_ubicacion -> findNavController().navigate(R.id.action_homeFragment_to_mapFragment)
+                R.id.nav_buscar -> findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
+                R.id.nav_especialistas -> findNavController().navigate(R.id.action_homeFragment_to_especialidadFragment)
+            }
+        }
 //        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
     }
 
-/*    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.top_navigation_menu,menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
@@ -55,7 +64,7 @@ class HomeFragment : Fragment() {
                 findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
                 true
             }
-            else->super.onOptionsItemSelected(item)
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

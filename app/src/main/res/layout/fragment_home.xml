@@ -22,12 +22,12 @@
         </ImageView>
     </androidx.appcompat.widget.Toolbar>-->
 
-    <RelativeLayout
+    <FrameLayout
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/groupofdoctors">
-    </RelativeLayout>
+    </FrameLayout>
 
 
     <LinearLayout
@@ -259,9 +259,12 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom__main_navigation"
+        android:id="@+id/bottom_main_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/navigation"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_main_menu"/>
 
