@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rios.figueroa.saludappbc.R
 
 class HomeFragment : Fragment() {
@@ -13,7 +15,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //creamos la variable que va a generar la vista apartir del fragment
+        //creamos la variable que va a generar la vista a partir del fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         return view
     }
@@ -39,6 +41,26 @@ class HomeFragment : Fragment() {
         cardLibOdon.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_dentistaFragment)
         }
+//        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
     }
 
+/*    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.top_navigation_menu,menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.perfil->{
+                findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
+                true
+            }
+            else->super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }*/
 }

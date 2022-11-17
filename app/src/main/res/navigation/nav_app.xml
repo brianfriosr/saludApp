@@ -19,20 +19,94 @@
         <action
             android:id="@+id/action_homeFragment_to_generalFragment"
             app:destination="@id/generalFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
     <fragment
         android:id="@+id/dentistaFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.DentistaFragment"
         android:label="fragment_dentista"
-        tools:layout="@layout/fragment_dentista" />
+        tools:layout="@layout/fragment_dentista" >
+        <action
+            android:id="@+id/action_dentistaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_dentistaFragment_to_medicoFragment"
+            app:destination="@id/medicoFragment" />
+        <action
+            android:id="@+id/action_dentistaFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_dentistaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_dentistaFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
     <fragment
         android:id="@+id/especialidadFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.EspecialidadFragment"
         android:label="fragment_especialidad"
-        tools:layout="@layout/fragment_especialidad" />
+        tools:layout="@layout/fragment_especialidad" >
+        <action
+            android:id="@+id/action_especialidadFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_especialidadFragment_to_medicoFragment"
+            app:destination="@id/medicoFragment" />
+        <action
+            android:id="@+id/action_especialidadFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_especialidadFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_especialidadFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
     <fragment
         android:id="@+id/generalFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.GeneralFragment"
         android:label="fragment_general"
-        tools:layout="@layout/fragment_general" />
+        tools:layout="@layout/fragment_general" >
+        <action
+            android:id="@+id/action_generalFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_medicoFragment"
+            app:destination="@id/medicoFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_generalFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicoFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.MedicoFragment"
+        android:label="fragment_medico"
+        tools:layout="@layout/fragment_medico" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.MapFragment"
+        android:label="MapFragment" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.rios.figueroa.saludappbc.view.ui.fragments.PerfilFragment"
+        android:label="PerfilFragment" />
 </navigation>

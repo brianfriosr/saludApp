@@ -30,22 +30,25 @@
     <string name="infoGeneral">Los mejores especialistas \nen medicina general</string>
     <string name="infoEspecialidades">Los mejores médicos \nespecialistas</string>
     <string name="infoOdontolgia">Los mejores médicos \nen Odontología</string>
+    <!-- STRINGS MENU -->
     <string name="salir">Salir</string>
-    <string name="ubicacion">Ubicacion</string>
+    <string name="ubicacion">Ubicación</string>
     <string name="buscar">Buscar</string>
     <string name="especialistas">Especialistas</string>
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Perfil</string>
     <!-- STRINGS ODONTOLOGIA   -->
     <string name="odontoTitle">Odontología</string>
     <string name="odontoSubTitle">Contamos con todas las opciones para tu salud dental.</string>
     <string name="odontoSubTitle2">Especialistas</string>
-    <string name="odontoProf">Odontòlogo</string>
+    <string name="odontoProf">Odontólogo</string>
     <string name="odonto1">Dr. Smith Anderson</string>
     <string name="odonto2">Dra. Jessica Riley</string>
     <string name="odonto3">Dra. Samantha Jung</string>
     <string name="odonto4">Dr. Jonathan Otero</string>
     <!-- STRINGS Especialistas   -->
     <string name="espTitle">Especialidades</string>
-    <string name="espSubTitle">Mèdicos con estudios avanzados y capacitaciòn clinica en un àrea especifica.</string>
+    <string name="espSubTitle">Médicos con estudios avanzados y capacitación clinica en un área específica.</string>
     <string name="espSubTitle2">Especialistas</string>
     <string name="espProf">Especialista</string>
     <string name="esp1">Dr. Smith Anderson</string>
@@ -61,5 +64,7 @@
     <string name="gen2">Dra. Jessica Riley</string>
     <string name="gen3">Dra. Samantha Jung</string>
     <string name="gen4">Dr. Jonathan Otero</string>
-    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

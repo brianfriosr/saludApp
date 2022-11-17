@@ -8,6 +8,20 @@
     android:background="@color/white"
     tools:context=".view.ui.fragments.HomeFragment">
 
+<!--    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionbartoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logosaludapp2">
+
+        </ImageView>
+    </androidx.appcompat.widget.Toolbar>-->
+
     <RelativeLayout
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -245,11 +259,10 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/bottom__main_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_navigation_menu" />
-
+        app:menu="@menu/bottom_nav_main_menu"/>
 
 </LinearLayout>

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import com.rios.figueroa.saludappbc.R
-import java.util.zip.Inflater
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater =menuInflater
-        inflater.inflate(R.menu.bottom_navigation_menu,menu)
+        inflater.inflate(R.menu.bottom_nav_main_menu,menu)
         return true
     }
 }
