@@ -52,7 +52,7 @@
                 android:textColor="@color/secondary_text"/>
 
             <EditText
-                android:id="@+id/editTextUsername"
+                android:id="@+id/usernameRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -78,7 +78,7 @@
                 android:textColor="@color/secondary_text"/>
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/correoRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -104,7 +104,7 @@
                 android:textColor="@color/secondary_text"/>
 
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/passwordRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -188,6 +188,7 @@
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/button_text"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"

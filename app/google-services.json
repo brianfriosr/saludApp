@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "906234525955",
+    "project_id": "saludapp1",
+    "storage_bucket": "saludapp1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906234525955:android:c36fecf11ad3e515681136",
+        "android_client_info": {
+          "package_name": "com.rios.figueroa.saludappbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906234525955-qh313pecrotgs7a84beg8a80ib5ifcp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAasucwl964bQXhgMq-9WNG7wXmUaCA6mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906234525955-qh313pecrotgs7a84beg8a80ib5ifcp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
