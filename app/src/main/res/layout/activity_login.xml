@@ -10,20 +10,20 @@
     <ImageView
         android:id="@+id/imageViewSaludApp"
         android:layout_width="wrap_content"
-        android:layout_height="188dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="528dp"
         android:src="@drawable/logosaludapp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="291dp"
+        android:layout_height="295dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -98,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="160dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="60dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="@string/forgotPassword"
                 android:textColor="@color/button_text" />
@@ -122,6 +122,8 @@
         android:textStyle="bold"
         android:textAllCaps="false"
         android:textSize="20sp"
+        android:backgroundTint="@color/button_text"
+        android:textColor="@color/white"
         android:text="@string/buttonLogin"
         android:background="@drawable/style_border_button"/>
 
@@ -133,7 +135,7 @@
             android:id="@+id/textViewNoAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:layout_marginStart="50dp"
             android:textColor="@color/doctor_names"
             android:fontFamily="@font/roboto_bold"
@@ -144,7 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/register"
             android:textColor="@color/button_text" />

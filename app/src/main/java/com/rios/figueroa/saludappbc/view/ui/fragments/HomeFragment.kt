@@ -5,10 +5,13 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rios.figueroa.saludappbc.R
 
+@Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
 
     override fun onCreateView(
@@ -50,10 +53,10 @@ class HomeFragment : Fragment() {
                 R.id.nav_especialistas -> findNavController().navigate(R.id.action_homeFragment_to_especialidadFragment)
             }
         }
-//        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
+        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
     }
 
-    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.top_navigation_menu,menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
@@ -71,5 +74,5 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-    }*/
+    }
 }

@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageViewSaludApp"
         android:layout_width="wrap_content"
-        android:layout_height="188dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -29,9 +29,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="360dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
@@ -85,6 +85,8 @@
         android:fontFamily="@font/roboto_bold"
         android:text="@string/buttonforgotpassword"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_text"
         android:textSize="18sp" />
 
     <LinearLayout
@@ -97,7 +99,7 @@
             android:id="@+id/textViewNoAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:layout_marginStart="50dp"
             android:textColor="@color/doctor_names"
             android:fontFamily="@font/roboto_bold"
@@ -107,7 +109,7 @@
             android:id="@+id/bCreateAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:layout_marginStart="50dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/register"

@@ -8,6 +8,15 @@
     android:background="@color/white"
     tools:context=".view.ui.fragments.GeneralFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionbartoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation"
+        app:titleTextColor="@color/navigation"
+        app:logo="@drawable/logosaludapp2">
+    </androidx.appcompat.widget.Toolbar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

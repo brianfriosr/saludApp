@@ -1,14 +1,14 @@
 package com.rios.figueroa.saludappbc.view.ui.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rios.figueroa.saludappbc.R
 
+@Suppress("DEPRECATION")
 class EspecialidadFragment : Fragment() {
 
     override fun onCreateView(
@@ -31,5 +31,26 @@ class EspecialidadFragment : Fragment() {
                 R.id.nav_especialistas -> findNavController().navigate(R.id.action_especialidadFragment_to_generalFragment)
             }
         }
+        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.top_navigation_menu,menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.perfil->{
+                findNavController().navigate(R.id.action_especialidadFragment_to_perfilFragment)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
 }

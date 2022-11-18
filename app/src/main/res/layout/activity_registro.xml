@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageViewSaludApp"
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -29,7 +29,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="160dp"
         app:cardBackgroundColor="@color/white"
@@ -153,7 +153,7 @@
                         android:textAlignment="viewStart"
                         android:textColor="@color/secondary_text"
                         android:translationX="150dp"
-                        android:translationY="-48dp"/>
+                        android:translationY="-33dp"/>
 
 
                     <RadioButton
@@ -163,7 +163,7 @@
                         android:fontFamily="@font/roboto_regular"
                         android:textColor="@color/secondary_text"
                         android:text="@string/generoOtro"
-                        android:translationY="-40dp"/>
+                        android:translationY="-30dp"/>
 
                 </RadioGroup>
 
@@ -185,7 +185,9 @@
         android:text="@string/buttonSignUp"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_text"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -198,7 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/alreadyAccount"
             android:textColor="@color/doctor_names" />
@@ -208,7 +210,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="690dp"
+            android:layout_marginTop="750dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/buttonsignup2"
             android:textColor="@color/button_text" />
