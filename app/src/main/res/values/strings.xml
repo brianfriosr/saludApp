@@ -1,4 +1,6 @@
 <resources>
+    <!-- STRING API MAPA  -->
+    <string name="apiMap" templateMergeStrategy="preserve" translatable="false">AIzaSyDuoKwCsche0ji6mJxsERfnnRwWRVun46Q</string>
     <!-- STRINGS LOGIN   -->
     <string name="app_name">saludAppBC</string>
     <string name="textViewUsername">Nombre de usuario</string>
