@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.MapFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionbartoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation"
+        app:titleTextColor="@color/navigation"
+        app:logo="@drawable/logosaludapp2">
+    </androidx.appcompat.widget.Toolbar>
 
     <fragment
         android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:name="com.google.android.gms.maps.SupportMapFragment">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/navigation"
+            app:itemTextColor="@color/white"
+            app:itemIconTint="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_menu"/>
     </fragment>
 
-</FrameLayout>
+
+</LinearLayout>

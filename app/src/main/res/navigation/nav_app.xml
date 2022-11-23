@@ -113,7 +113,20 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.MapFragment"
-        android:label="MapFragment" />
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_especialidadFragment"
+            app:destination="@id/especialidadFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+    </fragment>
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.PerfilFragment"

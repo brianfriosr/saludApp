@@ -4,13 +4,13 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -19,6 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rios.figueroa.saludappbc.R
 
+@Suppress("DEPRECATION")
 class MapFragment : Fragment(), OnMapReadyCallback{
     private lateinit var googleMap:GoogleMap
 
@@ -37,11 +38,38 @@ class MapFragment : Fragment(), OnMapReadyCallback{
         return view
     }
 
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val button = view.findViewById<BottomNavigationView>(R.id.nav_ubicacion)
+        val buttonBottomMenu= view.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        buttonBottomMenu.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.nav_inicio -> findNavController().navigate(R.id.action_mapFragment_to_homeFragment)
+                R.id.nav_buscar -> findNavController().navigate(R.id.action_mapFragment_to_searchFragment)
+                R.id.nav_especialistas -> findNavController().navigate(R.id.action_mapFragment_to_especialidadFragment)
+            }
+        }
+        (activity as AppCompatActivity).setSupportActionBar(view?.findViewById(R.id.actionbartoolbar))
+    }
 
-    }*/
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.top_navigation_menu,menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.perfil->{
+                findNavController().navigate(R.id.action_mapFragment_to_perfilFragment)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onMapReady(map: GoogleMap) {
         val bogota = LatLng(4.60971, -74.08175)
