@@ -17,8 +17,10 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <meta-data
-            android:name="com.google.android.geo_API_KEY"
-            android:value="@string/apiMap"></meta-data>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apiMap">
+
+        </meta-data>
 
         <activity
             android:name=".view.ui.activities.MainActivity"

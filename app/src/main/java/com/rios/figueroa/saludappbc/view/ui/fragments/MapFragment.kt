@@ -49,10 +49,10 @@ class MapFragment : Fragment(), OnMapReadyCallback{
             this.googleMap=it
             map.addMarker(MarkerOptions().position(bogota))
         }
-        //enableLocation()
+        enableLocation()
     }
 
-    /*private fun isLocationPermissionGrated()=ContextCompat.checkSelfPermission(this.requireContext(),
+    private fun isLocationPermissionGrated()=ContextCompat.checkSelfPermission(this.requireContext(),
         android.Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED
 
     @SuppressLint("MissingPermission")
@@ -90,5 +90,5 @@ class MapFragment : Fragment(), OnMapReadyCallback{
                         Toast.LENGTH_SHORT).show()
                 }else->{}
         }
-    }*/
+    }
 }
