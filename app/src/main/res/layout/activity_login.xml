@@ -64,7 +64,7 @@
                 android:textColor="@color/secondary_text"
                 android:gravity="center"
                 android:hint="@string/username"
-                android:inputType="textPersonName"
+                android:inputType="textEmailAddress"
                 android:minHeight="48dp" />
 
             <TextView

@@ -3,8 +3,8 @@
     <string name="apiMap" templateMergeStrategy="preserve" translatable="false">AIzaSyDuoKwCsche0ji6mJxsERfnnRwWRVun46Q</string>
     <!-- STRINGS LOGIN   -->
     <string name="app_name">saludAppBC</string>
-    <string name="textViewUsername">Nombre de usuario</string>
-    <string name="username">Ingrese su nombre de usuario</string>
+    <string name="textViewUsername">Correo Electrónico</string>
+    <string name="username">Ingrese su correo electrónico</string>
     <string name="textViewPassword">Contraseña</string>
     <string name="password">Ingrese su contraseña</string>
     <string name="forgotPassword"><u>¿Olvidó su contraseña?</u></string>

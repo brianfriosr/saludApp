@@ -37,6 +37,7 @@
         app:cardElevation="20dp">
 
         <LinearLayout
+            android:id="@+id/botonGoogle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -49,7 +50,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="@string/textViewUsername"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <EditText
                 android:id="@+id/usernameRegistro"
@@ -65,7 +66,7 @@
                 android:hint="@string/username"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <TextView
                 android:id="@+id/textViewEmail"
@@ -75,7 +76,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="@string/textviewemail"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <EditText
                 android:id="@+id/correoRegistro"
@@ -91,7 +92,7 @@
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <TextView
                 android:id="@+id/textViewPassword"
@@ -101,7 +102,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="@string/textViewPassword"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <EditText
                 android:id="@+id/passwordRegistro"
@@ -117,7 +118,7 @@
                 android:gravity="center"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:textColor="@color/secondary_text"/>
+                android:textColor="@color/secondary_text" />
 
             <TextView
                 android:id="@+id/textViewGenero"
@@ -130,18 +131,18 @@
                 android:textColor="@color/secondary_text" />
 
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
 
-                    <RadioButton
-                        android:id="@+id/radioButtonMasculino"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/secondary_text"
-                        android:text="@string/generomasculino" />
+                <RadioButton
+                    android:id="@+id/radioButtonMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/generomasculino"
+                    android:textColor="@color/secondary_text" />
 
 
                     <RadioButton
@@ -165,7 +166,7 @@
                         android:text="@string/generoOtro"
                         android:translationY="-30dp"/>
 
-                </RadioGroup>
+            </RadioGroup>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -177,9 +178,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="94dp"
         android:background="@drawable/style_border_button"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/buttonSignUp"
