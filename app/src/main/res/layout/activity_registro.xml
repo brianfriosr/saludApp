@@ -18,7 +18,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="597dp"
+        android:layout_marginBottom="650dp"
         android:src="@drawable/logosaludapp"/>
 
     <androidx.cardview.widget.CardView
@@ -29,9 +29,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="155dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
@@ -39,21 +39,20 @@
         <LinearLayout
             android:id="@+id/botonGoogle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/textViewUsername"
+                android:text="@string/textviewname"
                 android:textColor="@color/secondary_text" />
 
             <EditText
-                android:id="@+id/usernameRegistro"
+                android:id="@+id/nombreRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -63,19 +62,44 @@
                 android:ems="10"
                 android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
-                android:hint="@string/username"
+                android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:textColor="@color/secondary_text" />
 
             <TextView
-                android:id="@+id/textViewEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/textviewemail"
+                android:text="@string/textviewlastname"
+                android:textColor="@color/secondary_text" />
+
+            <EditText
+                android:id="@+id/apellidoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/style_border_editext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:hint="@string/lastname"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/textViewUsername"
                 android:textColor="@color/secondary_text" />
 
             <EditText
@@ -89,7 +113,7 @@
                 android:ems="10"
                 android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
-                android:hint="@string/email"
+                android:hint="@string/username"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
                 android:textColor="@color/secondary_text" />
@@ -157,14 +181,14 @@
                         android:translationY="-33dp"/>
 
 
-                    <RadioButton
-                        android:id="@+id/radioButtonOtro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/secondary_text"
-                        android:text="@string/generoOtro"
-                        android:translationY="-30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButtonOtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/generoOtro"
+                    android:textColor="@color/secondary_text"
+                    android:translationY="-30dp" />
 
             </RadioGroup>
 
@@ -180,7 +204,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginBottom="85dp"
         android:background="@drawable/style_border_button"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/buttonSignUp"
@@ -202,17 +226,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="750dp"
+            android:layout_marginTop="755dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/alreadyAccount"
             android:textColor="@color/doctor_names" />
 
         <TextView
-            android:id="@+id/bSignUp"
+            android:id="@+id/bLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="750dp"
+            android:layout_marginTop="755dp"
             android:fontFamily="@font/roboto_bold"
             android:text="@string/buttonsignup2"
             android:textColor="@color/button_text" />

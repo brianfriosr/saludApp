@@ -15,14 +15,20 @@ import com.rios.figueroa.saludappbc.R
 class RecuperarContActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var botonRecuperar: Button
+    lateinit var registroButton:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recuperar_cont)
         firebaseAuth= Firebase.auth
         botonRecuperar=findViewById(R.id.botonrecuperar)
+        registroButton=findViewById(R.id.bCreateAccount)
+
         val correo = findViewById<EditText>(R.id.recuperarcorreo)
         botonRecuperar.setOnClickListener {
             cambiocontra(correo.text.toString())
+        }
+        registroButton.setOnClickListener {
+            startActivity(Intent(this, RegistroActivity::class.java))
         }
     }
     private fun cambiocontra(correo:String){

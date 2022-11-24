@@ -50,7 +50,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/secondary_text"
-                android:text="@string/textviewemail" />
+                android:text="@string/textViewUsername" />
 
             <EditText
                 android:id="@+id/recuperarcorreo"
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/secondary_text"
                 android:gravity="center"
-                android:hint="@string/email"
+                android:hint="@string/username"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp" />
         </LinearLayout>

@@ -12,8 +12,10 @@
     <string name="textViewNoAccount">No tengo una cuenta</string>
     <string name="register"><u>¡Regístrate ahora!</u></string>
     <!-- STRINGS REGISTRO Y RECUPERAR CONTRASENA  -->
-    <string name="textviewemail">Correo electrónico</string>
-    <string name="email">Ingrese su correo electrónico</string>
+    <string name="textviewname">Nombre</string>
+    <string name="name">Ingrese su nombre</string>
+    <string name="textviewlastname">Apellido</string>
+    <string name="lastname">Ingrese su apellido</string>
     <string name="buttonforgotpassword">Recuperar mi contraseña</string>
     <string name="textviewGenero">Seleccione su genero</string>
     <string name="generofemenino">Fenemino</string>
