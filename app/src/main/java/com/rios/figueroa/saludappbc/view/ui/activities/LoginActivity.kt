@@ -38,7 +38,11 @@ class LoginActivity : AppCompatActivity() {
         recuperarButton=findViewById(R.id.bForgotPassword)
 
         loginButton.setOnClickListener {
-            login(email.text.toString(),password.text.toString())
+            if (!email.text.toString().isNullOrEmpty()) {
+                login(email.text.toString(), password.text.toString())
+            }else{
+                Toast.makeText(baseContext, "Ingrese por favor los datos solicitados", Toast.LENGTH_SHORT).show()
+            }
         }
 
         registroButton.setOnClickListener {
