@@ -75,7 +75,7 @@ class MapFragment : Fragment(), OnMapReadyCallback{
         val bogota = LatLng(4.60971, -74.08175)
         map?.let {
             this.googleMap=it
-            map.addMarker(MarkerOptions().position(bogota))
+            map.addMarker(MarkerOptions().position(bogota).title("SaludApp Bogotá"))
         }
         enableLocation()
     }
