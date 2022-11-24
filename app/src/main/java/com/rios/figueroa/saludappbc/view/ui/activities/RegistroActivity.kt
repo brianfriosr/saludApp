@@ -58,6 +58,7 @@ class RegistroActivity : AppCompatActivity() {
 
                 db.child("nombre").setValue(nombre)
                 db.child("apellido").setValue(apellido)
+                db.child("correo").setValue(correo)
 
                 Toast.makeText(baseContext, "Cuenta Creada", Toast.LENGTH_SHORT).show()
                 //depues de registrase lo redirecciona a la homeactivity
