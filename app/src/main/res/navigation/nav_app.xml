@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_dentistaFragment_to_especialidadFragment"
             app:destination="@id/especialidadFragment" />
+        <action
+            android:id="@+id/action_dentistaFragment_to_especialidadFragment2"
+            app:destination="@id/especialidadFragment" />
     </fragment>
     <fragment
         android:id="@+id/especialidadFragment"
@@ -130,5 +133,18 @@
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.rios.figueroa.saludappbc.view.ui.fragments.PerfilFragment"
-        android:label="PerfilFragment" />
+        android:label="PerfilFragment" >
+        <action
+            android:id="@+id/action_perfilFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_especialidadFragment"
+            app:destination="@id/especialidadFragment" />
+    </fragment>
 </navigation>

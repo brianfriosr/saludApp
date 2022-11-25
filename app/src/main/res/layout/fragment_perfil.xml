@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="10dp">
+        android:layout_margin="15dp">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -79,8 +79,134 @@
         </TableRow>
     </TableLayout>
 
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nombre"
+                android:textColor="@color/navigation"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_column="1">
+            </TextView>
+        </TableRow>
 
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/nameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Name"
+                android:layout_gravity="center"
+                android:layout_column="1">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_mode_edit_24"
+                android:layout_column="2">
+            </ImageButton>
+
+            </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Apellido"
+                android:textColor="@color/navigation"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_column="1">
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/lastNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Last Name"
+                android:layout_gravity="center"
+                android:layout_column="1">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/editLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_mode_edit_24"
+                android:layout_column="2">
+            </ImageButton>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Email"
+                android:textColor="@color/navigation"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_column="1">
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/emailProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Email"
+                android:layout_gravity="center"
+                android:layout_column="1">
+            </EditText>
+        </TableRow>
+    </TableLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
