@@ -9,10 +9,15 @@ import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.rios.figueroa.saludappbc.R
 
 @Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
+
+    lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -67,12 +72,17 @@ class HomeFragment : Fragment() {
                 findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
                 true
             }
+            R.id.nav_salida->{
+                firebaseAuth.signOut()
+                true }
             else -> super.onOptionsItemSelected(item)
         }
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        firebaseAuth=Firebase.auth
     }
 }

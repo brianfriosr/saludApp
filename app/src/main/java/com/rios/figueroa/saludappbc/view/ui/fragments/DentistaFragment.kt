@@ -4,19 +4,42 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rios.figueroa.saludappbc.R
+import com.rios.figueroa.saludappbc.view.adapter.GeneralAdapter
+import com.rios.figueroa.saludappbc.view.adapter.OdontologiaAdapter
+import com.rios.figueroa.saludappbc.viewmodel.medicoGeneralViewModel
+import com.rios.figueroa.saludappbc.viewmodel.odontologiaViewModel
 
 @Suppress("DEPRECATION")
 class DentistaFragment : Fragment() {
+    lateinit var recyclerLib: RecyclerView
+    lateinit var adapter: OdontologiaAdapter
+    val viewmodel by lazy { ViewModelProvider(this).get(odontologiaViewModel::class.java) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dentista, container, false)
+        val view= inflater.inflate(R.layout.fragment_dentista, container, false)
+        recyclerLib=view.findViewById(R.id.recyclerDentistas)
+        adapter= OdontologiaAdapter(requireContext())
+        recyclerLib.layoutManager= LinearLayoutManager(context)
+        recyclerLib.adapter=adapter
+        observeData()
+        return view
+    }
+
+    fun observeData(){
+        viewmodel.fetchOdontologiaData().observe(viewLifecycleOwner, Observer {
+            adapter.setListData(it)
+            adapter.notifyDataSetChanged()
+        })
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
