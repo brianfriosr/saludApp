@@ -7,8 +7,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rios.figueroa.saludappbc.R
+import com.rios.figueroa.saludappbc.model.medicoGeneral
+import com.squareup.picasso.Picasso
 
-class GeneralAdapter: RecyclerView.Adapter<GeneralAdapter.ViewHolder>(){
+class GeneralAdapter(val context: android.content.Context): RecyclerView.Adapter<GeneralAdapter.ViewHolder>(){
+    private var medicosLista= mutableListOf<medicoGeneral>()
+
+    fun setListData(data:MutableList<medicoGeneral>){
+        medicosLista = data
+    }
 
     override fun onCreateViewHolder(ViewGroup: ViewGroup, i: Int): ViewHolder {
 
@@ -18,29 +25,26 @@ class GeneralAdapter: RecyclerView.Adapter<GeneralAdapter.ViewHolder>(){
         return ViewHolder(v)
 
     }
-    inner class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView){
-        var itemImagen: ImageView
-        var itemTitle: TextView
-        var itemEspecialidad: TextView
+    inner class ViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
+        fun bin(medico:medicoGeneral){
 
-        init {
-            itemImagen= ItemView.findViewById(R.id.image)
-            itemTitle= ItemView.findViewById(R.id.especialidad)
-            itemEspecialidad= ItemView.findViewById(R.id.nombreProf )
+            Picasso.with(context).load(medico.imagen).into(itemView.findViewById<ImageView>(R.id.image))
+            itemView.findViewById<TextView>(R.id.especialidad).text=medico.especialidad
+            itemView.findViewById<TextView>(R.id.nombreProf).text=medico.nombre
         }
     }
-    val titles= arrayOf("Dr. Smith Anderson","Dr. Jessica Riley","Dr. Samantha Jung", "Dr. Jonathan Otero")
-    val especialidad= arrayOf("Medico","Homeopata","Ginecologo", "Bacteriologo")
-    val imagen = arrayOf(R.drawable.smith, R.drawable.riley, R.drawable.jung, R.drawable.otero)
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemTitle.text=titles[i]
-        viewHolder.itemEspecialidad.text=especialidad[i]
-        viewHolder.itemImagen.setImageResource(imagen[i])
+        val medico=medicosLista[i]
+        viewHolder.bin(medico)
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return if(medicosLista.size>0){
+            medicosLista.size
+        }else{
+            0
+        }
     }
 
 }

@@ -72,11 +72,9 @@ class HomeFragment : Fragment() {
                 findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
                 true
             }
-            /*R.id.nav_salida->{
+            R.id.nav_salida->{
                 firebaseAuth.signOut()
-                findNavController().navigate(R.id.action_homeFragment_to_login)
-                true
-            }*/
+                true }
             else -> super.onOptionsItemSelected(item)
         }
 
